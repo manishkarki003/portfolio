@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manish Karki | Backend Engineer</title>
-<meta name="description" content="Manish Karki — Python/Django backend developer building secure, scalable web applications and REST APIs.">
+<meta name="description" content="Manish Karki — Python/Django backend developer. Built boilersnepal.com end to end, freelance, in 12 days.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+<script defer src="js/script.js"></script>
 </head>
 <body>
 
@@ -25,8 +25,9 @@
   <nav id="navMenu">
     <a href="#about"><span class="nav-num">01</span>about</a>
     <a href="#skills"><span class="nav-num">02</span>skills</a>
-    <a href="#projects"><span class="nav-num">03</span>projects</a>
-    <a href="#contact"><span class="nav-num">04</span>contact</a>
+    <a href="#experience"><span class="nav-num">03</span>experience</a>
+    <a href="#work"><span class="nav-num">04</span>work</a>
+    <a href="#contact"><span class="nav-num">05</span>contact</a>
   </nav>
 </header>
 
@@ -41,22 +42,17 @@
           clean REST APIs, sane data models, and backend logic
           you can actually trust at 3am.</p>
         <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#work" class="btn btn-primary">View work</a>
           <a href="#contact" class="btn btn-ghost">Get in touch</a>
         </div>
       </div>
 
-      <div class="terminal" role="img" aria-label="Terminal window showing a simulated whoami command">
-        <div class="terminal-bar">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-          <span class="terminal-title">manish@portfolio: ~</span>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="assets/profile.jpg" alt="Manish Karki" width="823" height="987">
         </div>
-        <div class="terminal-body">
-          <p class="line"><span class="prompt">$</span> whoami</p>
-          <p class="line out" id="typedOut"></p>
-          <p class="line"><span class="prompt">$</span> <span class="cursor">&nbsp;</span></p>
+        <div class="photo-tag">
+          <span class="dot-live"></span> Bharatpur, Nepal
         </div>
       </div>
     </div>
@@ -120,54 +116,96 @@
     </div>
   </section>
 
-  <section id="projects" class="section">
-    <p class="section-eyebrow"><span class="nav-num">03</span> projects</p>
-    <h2>Selected work</h2>
+  <section id="experience" class="section">
+    <p class="section-eyebrow"><span class="nav-num">03</span> experience</p>
+    <h2>Track record</h2>
 
-    <!-- TODO: swap these GitHub links once the real project repos are pushed -->
-    <div class="project-list">
-      <article class="project-card">
-        <div class="project-head">
-          <h3>Task Management System</h3>
-          <a href="https://github.com/manishkarki003/portfolio" target="_blank" rel="noopener" class="project-link">
-            View code →
-          </a>
+    <div class="log">
+      <p class="log-cmd"><span class="prompt">$</span> git log --oneline --stat</p>
+
+      <div class="log-entry">
+        <div class="log-entry-head">
+          <span class="log-hash">a1b2c3d</span>
+          <span class="log-msg">freelance: built boilersnepal.com — full website + backend</span>
+          <span class="log-status status-shipped">shipped</span>
         </div>
-        <p>
-          A Django-based task management application with authentication,
-          role-based access control, and a REST API for managing tasks
-          across teams.
+        <div class="log-meta">
+          <span class="log-meta-item">ME Engineering Pvt. Ltd</span>
+          <span class="log-meta-sep">·</span>
+          <span class="log-meta-item">Bharatpur, Nepal</span>
+          <span class="log-meta-sep">·</span>
+          <span class="log-meta-item">Jun 10 – Jun 22, 2026 (12 days)</span>
+        </div>
+        <p class="log-body">
+          Designed and built the company's production website end to end,
+          including the public-facing site and an admin CMS for managing
+          products, services, and project case studies without touching code.
+          Covered product pages for industrial boilers and valves, a services
+          catalogue, a project portfolio with ongoing/completed status, and a
+          multi-location contact flow routing enquiries straight to WhatsApp.
         </p>
         <ul class="tech-tags">
           <li>Django</li>
-          <li>DRF</li>
+          <li>Admin CMS</li>
           <li>PostgreSQL</li>
+          <li>REST APIs</li>
         </ul>
-      </article>
-
-      <article class="project-card">
-        <div class="project-head">
-          <h3>Blog Platform</h3>
-          <a href="https://github.com/manishkarki003/portfolio" target="_blank" rel="noopener" class="project-link">
-            View code →
-          </a>
-        </div>
-        <p>
-          A full-featured blogging platform with CRUD operations, user
-          authentication, and an admin dashboard for managing posts and
-          users.
-        </p>
-        <ul class="tech-tags">
-          <li>Django</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </article>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="section dark contact-section">
-    <p class="section-eyebrow"><span class="nav-num">04</span> contact</p>
+  <section id="work" class="section dark">
+    <p class="section-eyebrow"><span class="nav-num">04</span> work</p>
+    <h2>Featured work</h2>
+
+    <article class="case-study">
+      <div class="case-head">
+        <div>
+          <p class="case-eyebrow">Production · Live</p>
+          <h3>boilersnepal.com</h3>
+          <p class="case-sub">ME Engineering Pvt. Ltd — industrial steam boiler manufacturer, Nepal</p>
+        </div>
+        <a href="https://boilersnepal.com" target="_blank" rel="noopener" class="case-link">
+          Visit site →
+        </a>
+      </div>
+
+      <p class="case-desc">
+        A full company website for a 20+ year old industrial manufacturer,
+        built freelance in 12 days. The site handles product specs (steam
+        boilers, pressure valves, water treatment plants), a services
+        catalogue, a project case-study archive split into ongoing and
+        completed work, and a quote-request flow that routes straight to
+        WhatsApp. Everything is editable through a custom admin CMS, so the
+        client can update products and projects without needing a developer.
+      </p>
+
+      <div class="case-grid">
+        <div class="case-stat">
+          <p class="case-stat-num">12</p>
+          <p class="case-stat-label">days to ship</p>
+        </div>
+        <div class="case-stat">
+          <p class="case-stat-num">9+</p>
+          <p class="case-stat-label">product pages</p>
+        </div>
+        <div class="case-stat">
+          <p class="case-stat-num">3</p>
+          <p class="case-stat-label">office locations</p>
+        </div>
+      </div>
+
+      <ul class="tech-tags">
+        <li>Django</li>
+        <li>Admin CMS</li>
+        <li>PostgreSQL</li>
+        <li>HTML / CSS / JS</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <p class="section-eyebrow"><span class="nav-num">05</span> contact</p>
     <h2>Let's build something.</h2>
     <p class="contact-sub">Open to backend roles, freelance work, and anything that needs a clean API.</p>
 

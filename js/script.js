@@ -26,30 +26,3 @@ if (navToggle && navMenu) {
     navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 }
-
-// Typing effect in the hero terminal
-const typedOutEl = document.getElementById("typedOut");
-
-function typeText(el, text, speed = 45) {
-  if (!el) return;
-  let i = 0;
-  function step() {
-    if (i <= text.length) {
-      el.textContent = text.slice(0, i);
-      i++;
-      setTimeout(step, speed);
-    }
-  }
-  step();
-}
-
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-if (typedOutEl) {
-  const message = "Manish Karki — Python/Django backend developer";
-  if (prefersReducedMotion) {
-    typedOutEl.textContent = message;
-  } else {
-    setTimeout(() => typeText(typedOutEl, message), 400);
-  }
-}
