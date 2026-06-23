@@ -75,7 +75,7 @@ h1, h2, h3 {
   background: #0b1120;
 }
 
-.navbar, main, footer {
+.navbar, main {
   position: relative;
   z-index: 2;
 }
@@ -311,20 +311,6 @@ h1, h2, h3 {
   margin-bottom: 40px;
 }
 
-/* About */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 48px;
-}
-
-.about-grid h2 { margin-bottom: 0; }
-
-.about-body p {
-  color: var(--text-dim);
-  margin-bottom: 18px;
-  max-width: 540px;
-}
 
 /* Skills */
 .skills-grid {
@@ -587,16 +573,6 @@ h1, h2, h3 {
 
 .contact-label { font-family: var(--mono); font-size: 0.8rem; color: var(--text-dim); }
 .contact-value { font-family: var(--mono); font-size: 1rem; }
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 32px var(--pad);
-  background: var(--bg-darker);
-  border-top: 1px solid var(--surface-line);
-}
-
-footer p { font-family: var(--mono); font-size: 0.78rem; color: var(--text-dim); }
 
 /* ============================================
    Responsive
