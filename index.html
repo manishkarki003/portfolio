@@ -9,9 +9,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.143.0/build/three.module.js"
+  }
+}
+</script>
 <script defer src="js/script.js"></script>
 </head>
 <body>
+
+<canvas id="starfield"></canvas>
 
 <div class="noise"></div>
 
@@ -236,6 +245,8 @@
 <footer>
   <p>© 2026 Manish Karki — built with HTML, CSS &amp; a healthy respect for clean code.</p>
 </footer>
+
+<script type="module" src="js/starfield.js"></script>
 
 </body>
 </html>
