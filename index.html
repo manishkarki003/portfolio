@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manish Karki | Backend Engineer</title>
-<meta name="description" content="Manish Karki — Python/Django backend developer. Built boilersnepal.com end to end, freelance, in 12 days.">
+<title>Manish Karki | Freelance Web Developer</title>
+<meta name="description" content="Manish Karki — freelance web developer building business websites, Django web applications, and SEO-friendly sites that convert visitors into customers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<script defer src="js/script.js"></script>
 <script type="importmap">
 {
   "imports": {
@@ -16,12 +17,10 @@
   }
 }
 </script>
-<script defer src="js/script.js"></script>
 </head>
 <body>
 
 <canvas id="starfield"></canvas>
-
 <div class="noise"></div>
 
 <header class="navbar">
@@ -32,11 +31,11 @@
     <span></span><span></span><span></span>
   </button>
   <nav id="navMenu">
-    <a href="#about"><span class="nav-num">01</span>about</a>
-    <a href="#skills"><span class="nav-num">02</span>skills</a>
-    <a href="#experience"><span class="nav-num">03</span>experience</a>
-    <a href="#work"><span class="nav-num">04</span>work</a>
-    <a href="#contact"><span class="nav-num">05</span>contact</a>
+    <a href="#services">services</a>
+    <a href="#work">work</a>
+    <a href="#process">process</a>
+    <a href="#about">about</a>
+    <a href="#contact" class="nav-cta">start a project</a>
   </nav>
 </header>
 
@@ -45,14 +44,16 @@
   <section class="hero">
     <div class="hero-grid">
       <div class="hero-text">
-        <p class="eyebrow">// backend developer</p>
-        <h1>Manish<br>Karki</h1>
-        <p class="hero-sub">I build Django applications that don't fall over —
-          clean REST APIs, sane data models, and backend logic
-          you can actually trust at 3am.</p>
+        <p class="eyebrow">// freelance web developer</p>
+        <h1>Websites that turn visitors into customers.</h1>
+        <p class="hero-sub">
+          I design and build fast, professional websites and web applications
+          for businesses that need to look credible online and convert more
+          visitors into enquiries - without the bloated agency price tag.
+        </p>
         <div class="hero-buttons">
-          <a href="#work" class="btn btn-primary">View work</a>
-          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          <a href="#contact" class="btn btn-primary">Start your project</a>
+          <a href="#work" class="btn btn-ghost">See recent work</a>
         </div>
       </div>
 
@@ -61,152 +62,103 @@
           <img src="assets/profile.jpg" alt="Manish Karki" width="823" height="987">
         </div>
         <div class="photo-tag">
-          <span class="dot-live"></span> Pokhara, Nepal
+          <span class="dot-live"></span> Bharatpur, Nepal
         </div>
       </div>
     </div>
 
-    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <a href="#trust" class="scroll-cue" aria-label="Scroll to see proof of work">
       <span>scroll</span>
       <span class="scroll-line"></span>
     </a>
   </section>
 
-  <section id="about" class="section">
-    <p class="section-eyebrow"><span class="nav-num">01</span> about</p>
-    <div class="about-grid">
-      <h2>Software engineer with a backend-first brain.</h2>
-      <div class="about-body">
-        <p>
-          I'm a Software Engineering graduate from Pokhara University with a
-          focus on backend development, scalable web applications, and
-          architecture that stays clean even after six months of feature
-          requests.
-        </p>
-        <p>
-          Most of my work happens below the UI — designing data models,
-          writing REST APIs, and making sure the system behaves the same
-          way under load as it does in a demo. I care about code that's
-          boring to read, because boring code is code nobody has to debug
-          at midnight.
-        </p>
-      </div>
-    </div>
+  <section id="trust" class="trust-strip">
+    <p class="trust-label">Real, live, shipped:</p>
+    <a href="https://boilersnepal.com" target="_blank" rel="noopener" class="trust-link">
+      Built and launched a full company website + custom admin system for an
+      industrial manufacturer - live at <span class="trust-url">boilersnepal.com</span> ->
+    </a>
   </section>
 
-  <section id="skills" class="section dark">
-    <p class="section-eyebrow"><span class="nav-num">02</span> skills</p>
-    <h2>Toolkit</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <p class="skill-label">Language</p>
-        <p class="skill-name">Python</p>
-        <p class="skill-detail">Day-to-day language for backend logic and scripting</p>
-      </div>
-      <div class="skill-card">
-        <p class="skill-label">Framework</p>
-        <p class="skill-name">Django</p>
-        <p class="skill-detail">Models, auth, admin, and views for full web apps</p>
-      </div>
-      <div class="skill-card">
-        <p class="skill-label">API layer</p>
-        <p class="skill-name">Django REST Framework</p>
-        <p class="skill-detail">Serializers, viewsets, and token-based auth</p>
-      </div>
-      <div class="skill-card">
-        <p class="skill-label">Database</p>
-        <p class="skill-name">PostgreSQL / MySQL</p>
-        <p class="skill-detail">Schema design, queries, and migrations</p>
-      </div>
-      <div class="skill-card">
-        <p class="skill-label">Version control</p>
-        <p class="skill-name">Git &amp; GitHub</p>
-        <p class="skill-detail">Branching, PRs, and clean commit history</p>
-      </div>
-      <div class="skill-card">
-        <p class="skill-label">Frontend basics</p>
-        <p class="skill-name">HTML, CSS, JavaScript</p>
-        <p class="skill-detail">Enough to ship the page wrapped around the API</p>
-      </div>
-    </div>
-  </section>
+  <section id="services" class="section">
+    <p class="section-eyebrow">what I build</p>
+    <h2>Services built around your business, not my CV.</h2>
 
-  <section id="experience" class="section">
-    <p class="section-eyebrow"><span class="nav-num">03</span> experience</p>
-    <h2>Track record</h2>
-
-    <div class="log">
-      <p class="log-cmd"><span class="prompt">$</span> git log --oneline --stat</p>
-
-      <div class="log-entry">
-        <div class="log-entry-head">
-          <span class="log-hash">a1b2c3d</span>
-          <span class="log-msg">freelance: built boilersnepal.com — full website + backend</span>
-          <span class="log-status status-shipped">shipped</span>
-        </div>
-        <div class="log-meta">
-          <span class="log-meta-item">ME Engineering Pvt. Ltd</span>
-          <span class="log-meta-sep">·</span>
-          <span class="log-meta-item">Bharatpur, Nepal</span>
-          <span class="log-meta-sep">·</span>
-          <span class="log-meta-item">Jun 10 – Jun 22, 2026 (12 days)</span>
-        </div>
-        <p class="log-body">
-          Designed and built the company's production website end to end,
-          including the public-facing site and an admin CMS for managing
-          products, services, and project case studies without touching code.
-          Covered product pages for industrial boilers and valves, a services
-          catalogue, a project portfolio with ongoing/completed status, and a
-          multi-location contact flow routing enquiries straight to WhatsApp.
+    <div class="services-grid">
+      <article class="service-card">
+        <p class="service-num">01</p>
+        <h3>Business &amp; Corporate Websites</h3>
+        <p>
+          A site that makes your company look as credible as the work you
+          actually do - built to convert visitors into enquiries, not just
+          sit online looking nice.
         </p>
-        <ul class="tech-tags">
-          <li>Django</li>
-          <li>Admin CMS</li>
-          <li>PostgreSQL</li>
-          <li>REST APIs</li>
-        </ul>
-      </div>
+      </article>
+
+      <article class="service-card">
+        <p class="service-num">02</p>
+        <h3>Django Web Applications</h3>
+        <p>
+          Custom backend systems - admin panels, internal tools, customer
+          portals - built to handle real business operations, not just
+          display content.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <p class="service-num">03</p>
+        <h3>SEO-Friendly Builds</h3>
+        <p>
+          Sites built clean from the ground up so search engines - and the
+          customers searching on them - can actually find you.
+        </p>
+      </article>
     </div>
   </section>
 
   <section id="work" class="section dark">
-    <p class="section-eyebrow"><span class="nav-num">04</span> work</p>
-    <h2>Featured work</h2>
+    <p class="section-eyebrow">recent work</p>
+    <h2>From no online presence to a fully operational digital storefront.</h2>
 
     <article class="case-study">
       <div class="case-head">
         <div>
-          <p class="case-eyebrow">Production · Live</p>
+          <p class="case-eyebrow">Production - Live</p>
           <h3>boilersnepal.com</h3>
-          <p class="case-sub">ME Engineering Pvt. Ltd — industrial steam boiler manufacturer, Nepal</p>
+          <p class="case-sub">ME Engineering Pvt. Ltd - industrial steam boiler manufacturer, Nepal</p>
         </div>
         <a href="https://boilersnepal.com" target="_blank" rel="noopener" class="case-link">
-          Visit site →
+          Visit site ->
         </a>
       </div>
 
       <p class="case-desc">
-        A full company website for a 20+ year old industrial manufacturer,
-        built freelance in 12 days. The site handles product specs (steam
-        boilers, pressure valves, water treatment plants), a services
-        catalogue, a project case-study archive split into ongoing and
-        completed work, and a quote-request flow that routes straight to
-        WhatsApp. Everything is editable through a custom admin CMS, so the
-        client can update products and projects without needing a developer.
+        ME Engineering, an established industrial boiler manufacturer, had no
+        way for customers to browse products or request quotes online. In
+        12 days, I built them a full company website with product
+        catalogues, a project portfolio, and a built-in admin system - so
+        their team can update content themselves, with no developer and no
+        ongoing cost required.
       </p>
+
+      <div class="case-result">
+        <p class="case-result-label">Result</p>
+        <p class="case-result-text">A live, professional web presence the client fully owns and operates.</p>
+      </div>
 
       <div class="case-grid">
         <div class="case-stat">
           <p class="case-stat-num">12</p>
-          <p class="case-stat-label">days to ship</p>
+          <p class="case-stat-label">days to launch</p>
         </div>
         <div class="case-stat">
           <p class="case-stat-num">9+</p>
           <p class="case-stat-label">product pages</p>
         </div>
         <div class="case-stat">
-          <p class="case-stat-num">3</p>
-          <p class="case-stat-label">office locations</p>
+          <p class="case-stat-num">100%</p>
+          <p class="case-stat-label">client-editable</p>
         </div>
       </div>
 
@@ -219,24 +171,87 @@
     </article>
   </section>
 
-  <section id="contact" class="section contact-section">
-    <p class="section-eyebrow"><span class="nav-num">05</span> contact</p>
-    <h2>Let's build something.</h2>
-    <p class="contact-sub">Open to backend roles, freelance work, and anything that needs a clean API.</p>
+  <section id="process" class="section">
+    <p class="section-eyebrow">how it works</p>
+    <h2>A clear process, start to finish.</h2>
 
-    <div class="contact-list">
-      <a href="mailto:manish.9846859444@gmail.com" class="contact-row">
-        <span class="contact-label">Email</span>
-        <span class="contact-value">manish.9846859444@gmail.com</span>
-      </a>
-      <a href="https://github.com/manishkarki003" target="_blank" rel="noopener" class="contact-row">
-        <span class="contact-label">GitHub</span>
-        <span class="contact-value">github.com/manishkarki003</span>
-      </a>
-      <a href="https://www.linkedin.com/in/manish-karki-a617b9240/" target="_blank" rel="noopener" class="contact-row">
-        <span class="contact-label">LinkedIn</span>
-        <span class="contact-value">linkedin.com/in/manish-karki</span>
-      </a>
+    <div class="process-grid">
+      <div class="process-step">
+        <p class="process-num">01</p>
+        <h3>Discovery call</h3>
+        <p>We talk about what your business actually needs, not what's trendy.</p>
+      </div>
+      <div class="process-step">
+        <p class="process-num">02</p>
+        <h3>Plan &amp; quote</h3>
+        <p>A clear scope, timeline, and price agreed up front - no surprises later.</p>
+      </div>
+      <div class="process-step">
+        <p class="process-num">03</p>
+        <h3>Build</h3>
+        <p>You see progress throughout the build, not just a reveal at the end.</p>
+      </div>
+      <div class="process-step">
+        <p class="process-num">04</p>
+        <h3>Launch &amp; handover</h3>
+        <p>A live site, plus a walkthrough - so you're not stuck waiting on me for every small change.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section dark">
+    <p class="section-eyebrow">about</p>
+    <div class="about-grid">
+      <h2>A developer who ships, not just talks.</h2>
+      <div class="about-body">
+        <p>
+          I'm Manish, a freelance web developer based in Bharatpur, Nepal. I
+          studied Software Engineering at Pokhara University, but most of
+          what I know now comes from actually shipping client work - most
+          recently a full production website and admin system for an
+          industrial manufacturer, built and launched in under two weeks.
+        </p>
+        <p>
+          I work directly with the business owner, not through layers of
+          account managers - which means faster decisions, clearer
+          communication, and a site built around what your business
+          actually needs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <p class="section-eyebrow">start a project</p>
+    <h2>Have a project in mind?</h2>
+    <p class="contact-sub">Tell me a bit about what you need - I'll get back to you within a day.</p>
+
+    <!-- TODO: Replace YOUR_FORM_ID with your real Formspree form ID from https://formspree.io before going live. -->
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="project">What do you need built?</label>
+        <textarea id="project" name="project" rows="4" required></textarea>
+      </div>
+      <div class="form-row">
+        <label for="budget">Budget range (optional)</label>
+        <input type="text" id="budget" name="budget" placeholder="e.g. $500-$1500">
+      </div>
+      <button type="submit" class="btn btn-primary form-submit">Send project details</button>
+    </form>
+
+    <div class="contact-alt">
+      <p>Or reach me directly:</p>
+      <a href="mailto:manish.9846859444@gmail.com">manish.9846859444@gmail.com</a>
+      <a href="https://github.com/manishkarki003" target="_blank" rel="noopener">github.com/manishkarki003</a>
+      <a href="https://www.linkedin.com/in/manish-karki-a617b9240/" target="_blank" rel="noopener">linkedin.com/in/manish-karki</a>
     </div>
   </section>
 
