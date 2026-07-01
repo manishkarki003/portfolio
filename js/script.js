@@ -26,3 +26,27 @@ if (navToggle && navMenu) {
     navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 }
+
+// Scroll-reveal: fade/slide elements in as they enter the viewport.
+// Lightweight (one shared observer, no layout thrashing) and respects
+// prefers-reduced-motion via the CSS transition-duration override.
+const revealTargets = document.querySelectorAll(".reveal");
+
+if (revealTargets.length && "IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: "0px 0px -60px 0px" }
+  );
+
+  revealTargets.forEach((el) => revealObserver.observe(el));
+} else {
+  // No IntersectionObserver support (or nothing to reveal): show everything immediately.
+  revealTargets.forEach((el) => el.classList.add("in-view"));
+}
