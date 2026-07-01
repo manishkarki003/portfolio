@@ -1,7 +1,7 @@
 PROFILE IMAGE PLACEHOLDER
 =========================
 
-Add your profile photo here with the filename: profile.jpg
+Add your profile photo here with the filename: profile-v2.jpg
 
 RECOMMENDED SPECIFICATIONS:
 - Size: 400x400 pixels (square aspect ratio)
