@@ -1,41 +1,37 @@
 ﻿/* ============================================
-   Tokens
-   ============================================ */
+  Tokens
+  ============================================ */
 :root {
-  /* ============================================
-     Tokens
-     ============================================ */
-  :root {
-    --bg: #0b1120;
-    --bg-darker: #070b14;
-    --surface: #131c2e;
-    --surface-2: #161f33;
-    --surface-line: #232f47;
-    --text: #e8eaed;
-    --text-dim: #8b96aa;
-    --accent: #10b981;       /* emerald - richer than terminal-green, more "established brand" */
-    --accent-dim: #0e7a5c;
-    --gold: #f2b84b;         /* used only for primary CTAs, so the one thing to click stands out */
-    --gold-dim: #c9933a;
+  --bg: #0b1120;
+  --bg-darker: #070b14;
+  --surface: #131c2e;
+  --surface-2: #161f33;
+  --surface-line: #232f47;
+  --text: #e8eaed;
+  --text-dim: #8b96aa;
+  --accent: #10b981;       /* emerald - richer than terminal-green, more "established brand" */
+  --accent-dim: #0e7a5c;
+  --gold: #f2b84b;         /* used only for primary CTAs, so the one thing to click stands out */
+  --gold-dim: #c9933a;
 
-    --mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
-    --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 
-    --maxw: 1080px;
-    --pad: clamp(24px, 6vw, 96px);
-  }
+  --maxw: 1080px;
+  --pad: clamp(24px, 6vw, 96px);
+}
 
-  /* ============================================
-     Reset
-     ============================================ */
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+/* ============================================
+  Reset
+  ============================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-  html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; }
 
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
-  }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
 
   /* ============================================
      Scroll reveal (lightweight, IntersectionObserver-driven)
