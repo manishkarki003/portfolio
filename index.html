@@ -346,20 +346,27 @@
       <p class="contact-sub">Tell me a bit about what you need - I'll get back to you within a day.</p>
 
       <!-- TODO: Replace YOUR_FORM_ID with your real Formspree form ID from https://formspree.io before going live. -->
-      <form class="contact-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form class="contact-form reveal" id="contact-form">
         <div class="form-row">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
         </div>
+
         <div class="form-row">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
         </div>
+
         <div class="form-row">
           <label for="project">What do you need built?</label>
           <textarea id="project" name="project" rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary form-submit">Send project details</button>
+
+        <button type="submit" class="btn btn-primary form-submit">
+          Send project details
+        </button>
+
+        <p id="form-message"></p>
       </form>
 
       <div class="contact-alt">
