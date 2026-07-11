@@ -779,3 +779,23 @@ html { scroll-behavior: smooth; }
     .case-head { flex-direction: column; }
     .process-grid { grid-template-columns: 1fr; }
   }
+/* CONTACT ICON HARD FIX */
+
+.contact-alt .contact-icon {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  max-width: 38px !important;
+  min-height: 38px !important;
+  max-height: 38px !important;
+  flex: 0 0 38px !important;
+}
+
+.contact-alt .contact-icon svg {
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+  max-width: 18px !important;
+  min-height: 18px !important;
+  max-height: 18px !important;
+}
