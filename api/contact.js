@@ -315,7 +315,7 @@ export default async function handler(req, res) {
                     "
                   >
                     
-                      href="mailto:${safeEmail}"
+                      <a href="mailto:${safeEmail}"
                       style="
                         color:#10b981;
                         text-decoration:none;
@@ -438,7 +438,7 @@ export default async function handler(req, res) {
                     valign="middle"
                     align="right"
                   >
-                    
+                    <a
                       href="mailto:${safeEmail}"
                       style="
                         display:inline-block;
