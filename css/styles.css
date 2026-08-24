@@ -84,6 +84,38 @@ html {
   transition-delay: 0.18s;
 }
 
+.skills-grid .reveal:nth-child(2) {
+  transition-delay: 0.06s;
+}
+
+.skills-grid .reveal:nth-child(3) {
+  transition-delay: 0.12s;
+}
+
+.skills-grid .reveal:nth-child(4) {
+  transition-delay: 0.18s;
+}
+
+.skills-grid .reveal:nth-child(5) {
+  transition-delay: 0.24s;
+}
+
+.skills-grid .reveal:nth-child(6) {
+  transition-delay: 0.3s;
+}
+
+.skills-grid .reveal:nth-child(7) {
+  transition-delay: 0.36s;
+}
+
+.skills-grid .reveal:nth-child(8) {
+  transition-delay: 0.42s;
+}
+
+.skills-grid .reveal:nth-child(9) {
+  transition-delay: 0.48s;
+}
+
 .project-list .reveal:nth-child(2) {
   transition-delay: 0.1s;
 }
@@ -557,6 +589,64 @@ main {
   font-size: 0.86rem;
 }
 
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-card {
+  background: var(--surface);
+  border: 1px solid var(--surface-line);
+  border-radius: 8px;
+  padding: 30px 26px;
+  text-align: center;
+  transition: border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+  border-color: var(--accent-dim);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.5);
+}
+
+.skill-icon {
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+/* Paired-icon variant (HTML5 + CSS3 in one card) — same footprint as
+   .skill-icon so the card grid stays visually even. */
+.skill-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.skill-icons i {
+  font-size: 2.1rem;
+}
+
+/* Next.js's Devicon glyph is solid black with no built-in light variant,
+   so it's invisible on our dark cards without inverting it. */
+.skill-icon-invert {
+  filter: invert(1) brightness(1.8);
+}
+
+.skill-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.skill-card p {
+  color: var(--text-dim);
+  font-size: 0.86rem;
+}
+
 /* Projects / Case study */
 .project-list {
   display: flex;
@@ -934,6 +1024,10 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .feature-list {
     grid-template-columns: 1fr;
   }
@@ -954,6 +1048,10 @@ main {
     right: 12px;
     font-size: 0.65rem;
     padding: 5px 10px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
 
