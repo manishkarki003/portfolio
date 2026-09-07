@@ -517,11 +517,8 @@ main {
   box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.5);
 }
 
-.service-num {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  color: var(--accent);
-  margin-bottom: 14px;
+.service-card h3 {
+  margin-top: 4px;
 }
 
 .service-card h3 {
@@ -794,7 +791,18 @@ main {
   border-radius: 4px;
   padding: 9px 16px;
   transition: background 0.2s ease, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.case-link::after {
+  content: "→";
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.case-link:hover::after {
+  transform: translateX(3px);
 }
 
 .case-link:hover {
@@ -906,13 +914,32 @@ main {
   flex-wrap: wrap;
 }
 
-.tech-tags li {
+
+
+.case-quote {
+  margin-top: 24px;
+  padding: 18px 22px;
+  border-left: 3px solid var(--gold);
+  background: rgba(242, 184, 75, 0.06);
+  border-radius: 0 8px 8px 0;
+}
+
+.case-quote p {
+  color: var(--text);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  margin-bottom: 10px;
+}
+
+.case-quote cite {
   font-family: var(--mono);
-  font-size: 0.75rem;
+  font-style: normal;
+  font-size: 0.8rem;
   color: var(--text-dim);
-  border: 1px solid var(--surface-line);
-  border-radius: 4px;
-  padding: 5px 10px;
+}
+
+.case-quote cite span {
+  color: var(--accent);
 }
 
 /* Contact */
