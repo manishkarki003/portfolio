@@ -405,23 +405,6 @@ main {
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.18);
 }
 
-.scroll-cue {
-  position: absolute;
-  bottom: 36px;
-  left: var(--pad);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  color: var(--text-dim);
-}
-
-.scroll-line {
-  width: 1px;
-  height: 28px;
-  background: linear-gradient(to bottom, var(--accent), transparent);
-}
 
 /* ============================================
      Trust strip
@@ -1131,9 +1114,6 @@ main {
     transform: translateY(-7px) rotate(-45deg);
   }
 
-  .scroll-cue {
-    display: none;
-  }
 }
 
 @media (max-width: 480px) {
