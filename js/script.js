@@ -117,3 +117,34 @@ if (contactForm) {
     submitButton.textContent = "Send project details";
   });
 }
+
+// ==========================================
+// Sticky Project CTA
+// ==========================================
+(function () {
+  const cta = document.getElementById("stickyCta");
+  const hero = document.querySelector(".hero") || document.querySelector("header");
+  const contact = document.getElementById("contact");
+
+  if (!cta) return;
+
+  function toggleCta() {
+    const heroBottom = hero ? hero.getBoundingClientRect().bottom : 0;
+    const pastHero = heroBottom < 0;
+
+    let contactVisible = false;
+    if (contact) {
+      const rect = contact.getBoundingClientRect();
+      contactVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    }
+
+    if (pastHero && !contactVisible) {
+      cta.classList.add("visible");
+    } else {
+      cta.classList.remove("visible");
+    }
+  }
+
+  window.addEventListener("scroll", toggleCta, { passive: true });
+  toggleCta();
+})();
