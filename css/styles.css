@@ -440,9 +440,24 @@ main {
 
 .section-eyebrow {
   font-family: var(--mono);
-  color: var(--text-dim);
-  font-size: 0.85rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
 }
 
 .section h2 {
