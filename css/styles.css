@@ -49,72 +49,45 @@ html {
 }
 
 /* ============================================
-     Scroll reveal (lightweight, IntersectionObserver-driven)
-     ============================================ */
+   Scroll reveal — replaces the generic fade+translateY
+   ============================================ */
 .reveal {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
+  transform: translateY(14px);
+  clip-path: inset(0 0 8% 0);
+  transition:
+    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    clip-path 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, clip-path;
 }
 
 .reveal.in-view {
   opacity: 1;
   transform: translateY(0);
+  clip-path: inset(0 0 0% 0);
 }
 
+/* Card-type reveals (services/skills/case studies) get a border-draw
+   accent on top of the fade, so they read as "assembling" rather than
+   just appearing */
+.service-card.reveal,
+.skill-card.reveal,
+.case-study.reveal {
+  border-color: transparent;
+  transition:
+    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    clip-path 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.6s ease 0.2s;
+}
+
+.service-card.reveal.in-view,
+.skill-card.reveal.in-view,
+.case-study.reveal.in-view {
+  border-color: var(--surface-line);
+}
 /* Staggered entrance for grouped siblings */
-.services-grid .reveal:nth-child(2) {
-  transition-delay: 0.08s;
-}
-
-.services-grid .reveal:nth-child(3) {
-  transition-delay: 0.16s;
-}
-
-.process-grid .reveal:nth-child(2) {
-  transition-delay: 0.06s;
-}
-
-.process-grid .reveal:nth-child(3) {
-  transition-delay: 0.12s;
-}
-
-.process-grid .reveal:nth-child(4) {
-  transition-delay: 0.18s;
-}
-
-.skills-grid .reveal:nth-child(2) {
-  transition-delay: 0.06s;
-}
-
-.skills-grid .reveal:nth-child(3) {
-  transition-delay: 0.12s;
-}
-
-.skills-grid .reveal:nth-child(4) {
-  transition-delay: 0.18s;
-}
-
-.skills-grid .reveal:nth-child(5) {
-  transition-delay: 0.24s;
-}
-
-.skills-grid .reveal:nth-child(6) {
-  transition-delay: 0.3s;
-}
-
-.skills-grid .reveal:nth-child(7) {
-  transition-delay: 0.36s;
-}
-
-.skills-grid .reveal:nth-child(8) {
-  transition-delay: 0.42s;
-}
-
-.skills-grid .reveal:nth-child(9) {
-  transition-delay: 0.48s;
-}
 
 .project-list .reveal:nth-child(2) {
   transition-delay: 0.1s;
@@ -482,7 +455,7 @@ main {
 /* Services */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1.4fr 1fr 1fr;
   gap: 20px;
 }
 
@@ -500,11 +473,18 @@ main {
   box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.5);
 }
 
-.service-card h3 {
-  margin-top: 4px;
+.services-grid .service-card:first-child {
+  padding: 34px 30px;
+  background: var(--surface-2);
+  border-color: var(--accent-dim);
+}
+
+.services-grid .service-card:first-child h3 {
+  font-size: 1.25rem;
 }
 
 .service-card h3 {
+  margin-top: 4px;
   font-size: 1.1rem;
   margin-bottom: 12px;
 }
