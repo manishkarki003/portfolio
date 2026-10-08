@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0b1210"/>
+  <g fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round">
+    <circle cx="32" cy="32" r="22"/>
+    <ellipse cx="32" cy="32" rx="9" ry="22" opacity=".35"/>
+    <path d="M10 32h44" opacity=".35"/>
+  </g>
+  <text x="32" y="38.5" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="800"
+        fill="#f5c451" stroke="#0b1210" stroke-width="4" paint-order="stroke">MK</text>
+</svg>
